@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/slitherio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-game-over {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(73, 71, 63, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.game-over-container {
+    text-align: center;
+}
+
+.text {
+    color: #de2b24;
+    font-family: Garamond, serif;
+    line-height: 1em;
+    font-weight:bold;
+    font-size: 80px;
+    text-shadow:0px 0px 0 rgb(248,248,248),1px 1px 0 rgb(242,242,242),2px 2px 0 rgb(235,235,235),3px 3px 0 rgb(229,229,229),4px 4px 0 rgb(222,222,222), 5px 5px 0 rgb(215,215,215),6px 6px 5px rgba(0,0,0,0.25),6px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2);
+}
+
+.restart-btn {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background-color: #3cb878;
+    color: #fff;
+    cursor: pointer;
+}
+
+.game-over {
+    top: 0;
+}
+
+.game-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("../img/Wiki-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cell {
+    display: flex;
+}
+
+.row {
+    width: 30px;
+    height: 30px;
+}
+
+.snake {
+    width: 30px;
+    height: 30px;
+    /*background-color: yellow;*/
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(0deg);
+    background-image: url("../img/normal-snake.png");
+}
+
+.part2 {
+    top: 150px;
+    left: 30px;
+}
+
+.part1 {
+    top: 150px;
+    left: 60px;
+}
+
+.part0 {
+    left: 90px;
+    top: 150px;
+    background-image: url("../img/snake-head.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(0deg);
+    background-color: transparent;
+}
+
+.tail {
+    background-image: url("../img/snake-tail.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(0deg);
+    background-color: transparent;
+}
+
+.apple {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/apple.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    position: absolute;
+}
+
+.row:nth-of-type(n+15) {
+    background: url("../img/wall.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row:nth-of-type(-n+1) {
+    background: url("../img/wall.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cell:nth-of-type(-n+1) {
+    background: url("../img/wall.png");
+}
+
+.cell:nth-of-type(n+15) {
+    background: url("../img/wall.png");
+}
+
+.top-left-snake {
+    background-image: url("../img/top-left-snake.png");
+}
+
+.top-right-snake {
+    background-image: url("../img/top-right-snake.png");
+}
+
+.bottom-right-snake {
+    background-image: url("../img/bottom-right-snake.png");
+}
+
+.bottom-left-snake {
+    background-image: url("../img/bottom-left-snake.png");
+}
+
+.score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: Garamond, serif;
+    line-height: 1em;
+    color: #fff9d6;
+    font-weight:bold;
+    font-size: 81px;
+    text-shadow:0px 0px 0 rgb(240,240,240),1px 1px 0 rgb(225,225,225),2px 2px 0 rgb(211,211,211),3px 3px 0 rgb(196,196,196),4px 4px 0 rgb(181,181,181),5px 5px 0 rgb(166,166,166), 6px 6px 0 rgb(151,151,151),7px 7px 6px rgba(0,0,0,0.5),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
+}
+
+
+
+
+
